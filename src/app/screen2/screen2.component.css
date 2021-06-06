@@ -1,0 +1,18 @@
+#card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.65);
+    /* height: 350px; */
+    margin: 3rem auto 8.1rem auto;
+    width: 400px;    
+  }
+  #card-content {
+    padding: 12px 44px;
+  }
+  #card-title {
+    font-family: "Calibri", sans-serif;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 26px;
+    color: #707070;
+  }
