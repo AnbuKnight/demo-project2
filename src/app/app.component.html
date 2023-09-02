@@ -2,3 +2,8 @@
 <app-navbar></app-navbar>
 </div>
 <router-outlet></router-outlet>
+<a [appHighlight]="color" [routerLink]="['/parent', 'testValue']">Highlight me..!</a>
+<p *appNot="!condition"> A => This paragraph is displayed because the condition is true. </p>
+<p *appNot="condition"> B => This paragraph is displayed because the condition is false. </p>
+<h1>Custom Pipe</h1>
+<b>Square root of 25 is: {{25 | sqrt}}</b>

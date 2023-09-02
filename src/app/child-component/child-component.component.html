@@ -1,0 +1,9 @@
+<!-- <p>Data received from PARENT through the variable item</p>
+<p>
+    Today's item: {{item}}
+  </p> -->
+
+<p>Child component</p>
+  <label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>

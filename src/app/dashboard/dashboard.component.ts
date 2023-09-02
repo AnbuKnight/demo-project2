@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   constructor() { }
-  public slideIndex = 1;
+  public slideIndex:number = 1;
+  public var2;
 
   ngOnInit(): void {  
     this.showSlides(this.slideIndex);
@@ -40,6 +41,34 @@ export class DashboardComponent implements OnInit {
   }
   slides[this.slideIndex-1].setAttribute("style", "display:block" );
   dots[this.slideIndex-1].className += " active";
+  
+  var variable1:number=2;
+ var x=1+variable1;
+
+ var t:any;
+ t.callmethod();  
+
+ let number1=new Number(123);
+ var y=number1.valueOf()+4;
+ var v="testString";
+
+ var yu:string;
+ yu.concat();
+ yu.split(',');
+
+ var r:class112;
+
+ var array2:Array<string>;
+array2.slice()
+
 }
 
+}
+export class class112
+{
+  var1:Number;
+  method()
+  {
+
+  }
 }

@@ -1,0 +1,5 @@
+<button (click)="updateRates()">Update rates</button>
+  <div>
+      <h4>{{ 1 | currency }} = {{ rates.inr | currency: 'INR' }}</h4>
+      <app-ng-do-check-cycle-a [rates]="rates"></app-ng-do-check-cycle-a>
+  </div>

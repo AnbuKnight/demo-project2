@@ -1,0 +1,30 @@
+<p>NG CLASS DIRECTIVE</p>
+<p [ngClass]="'class1'">example 1</p>
+<p [ngClass]="'class1 class2 class3'">example 2</p>
+<p [ngClass]="{'class1': myBool, 'class2': true, 'class3': true}">example 3</p>
+<p [ngClass]="{'class1 class2 class3' : true}">example 4</p>
+<p [ngClass]="['class1', 'class2', 'class3']">example 5</p>
+<p [ngClass]="setClasses()">example 6</p>
+
+<label [ngStyle]="{'color':'blue', 'font-weight':'800'}">example 7</label>
+<p [ngStyle]="{'background-color':variable1 === 'test' ? 'green' : 'red' }">example 8<p>
+
+    <ul *ngFor="let person of people">
+        <li [ngStyle]="{'color':getColor(person.country)}"> {{ person.name }} ({{ person.country }}) (1)
+        </li>
+      </ul>
+
+<input type="text" [(ngModel)]="field1" value="value1" (ngModelChange)="modelChangedForTextBox($event)">
+
+<div *ngIf = 'myBool'>Boolean is set to true</div>
+
+<select [(ngModel)]="selectedValue">  
+    <option *ngFor="let item of items;" [value]="item.name">{{item.name}}</option>  
+</select>  
+<div class='row' [ngSwitch]="selectedValue">  
+    <div *ngSwitchCase="'One'">One is Pressed</div>  
+    <div *ngSwitchCase="'Two'">Two is Selected</div>  
+    <div *ngSwitchDefault>Default Option</div>  
+</div>  
+
+
